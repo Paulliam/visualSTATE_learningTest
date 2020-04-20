@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modelFile excluded="false" format="11" guid="B1BC62C6-4B21-431A-830D-A03B3FE634FA" name="TopLevelStateMachine1" xmlns="http://www.iar.com/visualSTATE/2011/Modelfile">
+
+  <expl></expl>
+
+  <alias></alias>
+
+  <position bottom="638" left="201" right="963" top="130"/>
+
+  <stateProperties labelHeight="42" wrapText="true">
+    <properties value="65537"/>
+  </stateProperties>
+
+  <elements>
+    <actionsFolder guid="70B03CB4-606D-4065-9A23-5262AACA6E1C" name="root">
+      <actionFunction definition="false" guid="3E29105D-52EC-475B-9A44-69564D66C9DE" name="BLUE_ON" returnType="VS_VOID">
+        <expl></expl>
+      </actionFunction>
+      <actionFunction definition="false" guid="2FDC94FF-90CA-4E2E-ADDC-1338F8C3A2FE" name="LED_OFF" returnType="VS_VOID">
+        <expl></expl>
+      </actionFunction>
+      <actionFunction definition="false" guid="6F4B153A-650A-432F-A3CB-DF60C0575F09" name="RED_ON" returnType="VS_VOID">
+        <expl></expl>
+      </actionFunction>
+    </actionsFolder>
+    <constantsFolder guid="A48A9B2B-AD26-4B12-ABB0-40F16095DDA9" name="root"/>
+    <eventsFolder guid="EC4347A7-CA02-495A-88F0-559EADBABC8C" name="root">
+      <event definition="true" guid="A601AD9E-7011-42B6-A275-52CC417E7833" name="button1">
+        <expl></expl>
+      </event>
+      <event definition="true" guid="0000EE21-6456-45C4-BDF7-4021B90A8954" name="button2">
+        <expl></expl>
+      </event>
+      <event definition="true" guid="C8F568BE-2E76-4376-AF6E-5EC7F06AF122" name="button3">
+        <expl></expl>
+      </event>
+    </eventsFolder>
+    <eventGroupsFolder guid="C4620E1C-8701-4161-902C-4F8894B73774" name="root"/>
+    <externVariablesFolder guid="04B540BF-C499-4F3A-9D5D-4A43B8FF6E71" name="root"/>
+    <internVariablesFolder guid="9BD5D9F6-94F3-46C8-83F9-7F697F6DBA8A" name="root"/>
+    <signalsFolder guid="6F81515C-5D79-4D3A-8C7D-861B3BE9836A" name="root"/>
+  </elements>
+
+  <regions>
+    <regionBlock guid="3445C753-85AF-4C64-B10D-0E640DAE9593"/>
+  </regions>
+
+  <regionBlocks>
+    <region excluded="false" guid="3445C753-85AF-4C64-B10D-0E640DAE9593" name="Region1" offPage="true">
+      <expl></expl>
+      <placement column="0" row="0"/>
+      <size height="466" width="762"/>
+      <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+      <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+      <vertices>
+        <vertexBlock guid="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508"/>
+        <vertexBlock guid="957B3163-9A9E-4DE4-B705-60E0F17F297B"/>
+        <vertexBlock guid="81E04147-F4AE-4390-8F6F-C84C643BE6D5"/>
+        <vertexBlock guid="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C"/>
+      </vertices>
+    </region>
+  </regionBlocks>
+
+  <vertexBlocks>
+    <stateVertex excluded="false" guid="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508" name="select_LED">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="619" left="143" right="344" top="489"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="1638401"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="D4A05DA7-5974-470F-A69E-5061F7A43950" source="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508" target="81E04147-F4AE-4390-8F6F-C84C643BE6D5">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-302" left="34" right="365" top="-362"/>
+            <properties value="809894018"/>
+            <routePoints>
+              <routePoint x="66" y="0"/>
+              <routePoint x="71" y="-275"/>
+              <routePoint x="0" y="77"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="A601AD9E-7011-42B6-A275-52CC417E7833"/>
+          </conditionSide>
+          <actionSide>
+            <actionCall actionFunction="RED_ON"/>
+          </actionSide>
+        </externalTransition>
+        <externalTransition guid="816E6901-461F-4435-9B7A-FA2FA7788C2B" source="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508" target="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="74" left="280" right="492" top="-5"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="201" y="34"/>
+              <routePoint x="0" y="53"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="0000EE21-6456-45C4-BDF7-4021B90A8954"/>
+          </conditionSide>
+          <actionSide>
+            <actionCall actionFunction="BLUE_ON"/>
+          </actionSide>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
+    <stateVertex excluded="false" guid="81E04147-F4AE-4390-8F6F-C84C643BE6D5" name="RED_LED">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="278" left="646" right="963" top="146"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="29335B65-9543-43B9-98B5-58C17D6C1F53" source="81E04147-F4AE-4390-8F6F-C84C643BE6D5" target="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="280" left="-243" right="156" top="201"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="74" y="132"/>
+              <routePoint x="85" y="0"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="0000EE21-6456-45C4-BDF7-4021B90A8954"/>
+          </conditionSide>
+          <actionSide>
+            <actionCall actionFunction="BLUE_ON"/>
+          </actionSide>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
+    <pseudoStateVertex excluded="false" guid="957B3163-9A9E-4DE4-B705-60E0F17F297B" kind="initialState" name="initial1">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="815" left="58" right="111" top="762"/>
+      <properties value="114689"/>
+      <externalTransitions>
+        <externalTransition guid="C85449CB-F80B-4BE6-B23B-E31143AA8389" source="957B3163-9A9E-4DE4-B705-60E0F17F297B" target="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-8" left="58" right="270" top="-87"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="26" y="0"/>
+              <routePoint x="0" y="24"/>
+            </routePoints>
+          </transitionProperties>
+          <actionSide>
+            <actionCall actionFunction="LED_OFF"/>
+          </actionSide>
+        </externalTransition>
+      </externalTransitions>
+    </pseudoStateVertex>
+    <stateVertex excluded="false" guid="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C" name="BLUE_LED">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="603" left="635" right="953" top="471"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="FC7B8857-8C46-42B6-B4E8-BB338771A752" source="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C" target="81E04147-F4AE-4390-8F6F-C84C643BE6D5">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-42" left="238" right="693" top="-122"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="217" y="0"/>
+              <routePoint x="206" y="132"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="A601AD9E-7011-42B6-A275-52CC417E7833"/>
+          </conditionSide>
+          <actionSide>
+            <actionCall actionFunction="RED_ON"/>
+          </actionSide>
+        </externalTransition>
+        <externalTransition guid="6A719395-8943-4A92-86F9-9E68A9DD980D" source="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C" target="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="352" left="-243" right="93" top="296"/>
+            <properties value="809894017"/>
+            <routePoints>
+              <routePoint x="74" y="132"/>
+              <routePoint x="-143" y="275"/>
+              <routePoint x="106" y="130"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="C8F568BE-2E76-4376-AF6E-5EC7F06AF122"/>
+          </conditionSide>
+          <actionSide>
+            <actionCall actionFunction="LED_OFF"/>
+          </actionSide>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
+  </vertexBlocks>
+
+</modelFile>

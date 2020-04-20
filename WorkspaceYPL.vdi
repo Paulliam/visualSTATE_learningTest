@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<designerViewInformation format="3">
+
+  <views maximized="false">
+    <elementView guid="B1BC62C6-4B21-431A-830D-A03B3FE634FA" type="1">
+      <position bottom="982" left="811" right="1622" top="0"/>
+    </elementView>
+    <diagramView guid="3445C753-85AF-4C64-B10D-0E640DAE9593">
+      <position bottom="982" left="0" right="811" top="0"/>
+      <zoom value="1.509779"/>
+      <origin left="0" top="30"/>
+    </diagramView>
+  </views>
+
+  <systemTree>
+    <expandedData expanded="true"/>
+    <expandedData expanded="true"/>
+    <expandedData expanded="true"/>
+    <expandedData expanded="true"/>
+    <expandedData expanded="false"/>
+    <expandedData expanded="false"/>
+    <expandedData expanded="false"/>
+    <expandedData expanded="false"/>
+    <expandedData expanded="true"/>
+    <expandedData expanded="false"/>
+  </systemTree>
+
+  <fileTree>
+    <expandedData expanded="true"/>
+    <expandedData expanded="false"/>
+    <expandedData expanded="false"/>
+  </fileTree>
+
+  <searchData/>
+
+</designerViewInformation>

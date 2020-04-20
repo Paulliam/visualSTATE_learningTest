@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<projectFile dropSignalIfQueueFull="false" format="11" guid="289F75DF-CE51-40A9-82E8-D51224CBCEBC" name="WorkspaceYPL" xmlns="http://www.iar.com/visualSTATE/2011/Modelfile">
+
+  <expl></expl>
+
+  <SCCInfo auxPath="" localPath="." project="" provider=""/>
+
+  <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+
+  <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+
+  <settings>
+    <colors>
+      <color rgb="0X000000"/>
+      <color rgb="0X637AFF"/>
+      <color rgb="0XB1D991"/>
+      <color rgb="0XFF0000"/>
+      <color rgb="0XF0DCDC"/>
+      <color rgb="0XD2FAFA"/>
+      <color rgb="0XFFFFFF"/>
+      <color rgb="0XFEFAF3"/>
+      <color rgb="0X00BBFA"/>
+      <color rgb="0X00E0FF"/>
+      <color rgb="0XEAC771"/>
+      <color rgb="0X835A00"/>
+      <color rgb="0X37C2AE"/>
+      <color rgb="0X808000"/>
+      <color rgb="0XC0C0C0"/>
+      <color rgb="0X808080"/>
+    </colors>
+    <fonts>
+      <font>-13 400 0 255 "Arial"</font>
+      <font>-13 700 0 255 "Arial"</font>
+      <font>-11 400 0 255 "Arial"</font>
+      <font>-11 700 0 255 "Arial"</font>
+      <font>-13 400 0 255 "Times New Roman"</font>
+      <font>-13 700 0 255 "Times New Roman"</font>
+      <font>-11 400 0 255 "Times New Roman"</font>
+      <font>-11 700 0 255 "Times New Roman"</font>
+    </fonts>
+    <pageSetup>
+      <footer center="" height="12" left="&amp;FN" right="&amp;PN">
+        <font>-13 400 0 255 "Times New Roman"</font>
+      </footer>
+      <header center="&amp;NF" height="12" left="" right="">
+        <font>-13 400 0 255 "Times New Roman"</font>
+      </header>
+      <pageLayout height="297" marginBottom="4" marginLeft="4" marginRight="4" marginTop="4" paperType="9" portrait="true" width="210"/>
+      <elementPrintSetup print="true">
+        <font>-13 400 0 255 "Times New Roman"</font>
+      </elementPrintSetup>
+    </pageSetup>
+  </settings>
+
+  <elements>
+    <actionsFolder guid="45D99BF3-402E-4383-81DD-6476EAF4C73D" name="root"/>
+    <constantsFolder guid="EF96FFFF-4BFD-4656-92D5-AB3FED16BA2E" name="root"/>
+    <eventsFolder guid="98DFFC84-E867-48C5-BBC0-723594BF4AB7" name="root"/>
+    <eventGroupsFolder guid="79072B27-02B8-4C3F-9F4A-DBAAE18B8AEC" name="root"/>
+    <externVariablesFolder guid="4D79BAEA-30EA-4DF5-BEC5-8CED32712B08" name="root"/>
+    <internVariablesFolder guid="1DED5A91-02B5-4D66-A5B4-787F7C152A19" name="root"/>
+    <signalsFolder guid="A98E9779-BC46-4F40-9F29-4EBEE488A28F" name="root"/>
+  </elements>
+
+  <systems>
+    <system guid="3FCC9BCF-E234-41E8-831A-D26F03E86D25" name="SystemYPL" numberOfInstances="1" signalQueueSize="0">
+      <expl></expl>
+      <alias></alias>
+      <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+      <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+      <position bottom="622" left="376" right="1278" top="148"/>
+      <properties value="1048578"/>
+      <files>
+        <file>TopLevelStateMachine1.vsr</file>
+        <file>TopLevelStateMachine2.vsr</file>
+      </files>
+    </system>
+  </systems>
+
+</projectFile>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modelFile excluded="false" format="11" guid="7A9F6A52-8CC3-43E1-9B01-B2F66288624A" name="TopLevelStateMachine2" xmlns="http://www.iar.com/visualSTATE/2011/Modelfile">
+
+  <expl></expl>
+
+  <alias></alias>
+
+  <position bottom="1109" left="212" right="968" top="743"/>
+
+  <stateProperties labelHeight="42" wrapText="true">
+    <properties value="65537"/>
+  </stateProperties>
+
+  <elements>
+    <actionsFolder guid="DD22CEDF-6190-4055-890E-7F2AE6C73C1E" name="root"/>
+    <constantsFolder guid="3AACBB9A-1B46-469F-AD54-ED6AA82EC7BF" name="root"/>
+    <eventsFolder guid="AB7EFAB8-01FE-4D46-9D56-44C6BB7BDC41" name="root"/>
+    <eventGroupsFolder guid="605971A7-132B-413C-AE17-63AE04B0B0CB" name="root"/>
+    <externVariablesFolder guid="D021E2AD-3C41-4D67-9F73-A0F73473943D" name="root"/>
+    <internVariablesFolder guid="8672053C-7EAC-4E34-A1A6-1D2B0607947E" name="root"/>
+    <signalsFolder guid="2B310530-7509-41EA-8F56-00408FAEED06" name="root"/>
+  </elements>
+
+  <regions>
+    <regionBlock guid="3C08311F-4D2B-4970-8A88-0A94A99D0030"/>
+  </regions>
+
+  <regionBlocks>
+    <region excluded="false" guid="3C08311F-4D2B-4970-8A88-0A94A99D0030" name="Region1" offPage="true">
+      <expl></expl>
+      <placement column="0" row="0"/>
+      <size height="315" width="751"/>
+      <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+      <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+      <vertices/>
+    </region>
+  </regionBlocks>
+
+  <vertexBlocks/>
+
+</modelFile>
