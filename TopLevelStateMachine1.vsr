@@ -5,7 +5,7 @@
 
   <alias></alias>
 
-  <position bottom="638" left="201" right="963" top="130"/>
+  <position bottom="325" left="201" right="794" top="130"/>
 
   <stateProperties labelHeight="42" wrapText="true">
     <properties value="65537"/>
@@ -34,8 +34,17 @@
       <event definition="true" guid="C8F568BE-2E76-4376-AF6E-5EC7F06AF122" name="button3">
         <expl></expl>
       </event>
+      <event definition="true" guid="D44FACF6-F1B4-4631-919C-F14244077D95" name="button4">
+        <expl></expl>
+      </event>
     </eventsFolder>
-    <eventGroupsFolder guid="C4620E1C-8701-4161-902C-4F8894B73774" name="root"/>
+    <eventGroupsFolder guid="C4620E1C-8701-4161-902C-4F8894B73774" name="root">
+      <eventGroup definition="true" guid="346A968C-434E-4D42-9BB0-047E52BF4C69" name="EventGroup1">
+        <expl></expl>
+        <member>button3</member>
+        <member>button1</member>
+      </eventGroup>
+    </eventGroupsFolder>
     <externVariablesFolder guid="04B540BF-C499-4F3A-9D5D-4A43B8FF6E71" name="root"/>
     <internVariablesFolder guid="9BD5D9F6-94F3-46C8-83F9-7F697F6DBA8A" name="root"/>
     <signalsFolder guid="6F81515C-5D79-4D3A-8C7D-861B3BE9836A" name="root"/>
@@ -43,13 +52,14 @@
 
   <regions>
     <regionBlock guid="3445C753-85AF-4C64-B10D-0E640DAE9593"/>
+    <regionBlock guid="7FAD53B8-0A38-4CEB-8062-82B825BC78C9"/>
   </regions>
 
   <regionBlocks>
     <region excluded="false" guid="3445C753-85AF-4C64-B10D-0E640DAE9593" name="Region1" offPage="true">
       <expl></expl>
       <placement column="0" row="0"/>
-      <size height="466" width="762"/>
+      <size height="153" width="296"/>
       <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
       <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
       <vertices>
@@ -59,9 +69,174 @@
         <vertexBlock guid="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C"/>
       </vertices>
     </region>
+    <region excluded="false" guid="7FAD53B8-0A38-4CEB-8062-82B825BC78C9" name="Region2" offPage="true">
+      <expl></expl>
+      <placement column="1" row="0"/>
+      <size height="146" width="291"/>
+      <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+      <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+      <vertices>
+        <vertexBlock guid="3000A226-2595-4A59-A44C-92369530D0E6"/>
+        <vertexBlock guid="350372D8-786F-43AC-8E35-7456BE35DF4B"/>
+        <vertexBlock guid="35F96CBB-85E5-4D16-AD6B-B3D452C8E1DC"/>
+        <vertexBlock guid="615F9BCB-0DE4-4579-AE12-1CC999FDBAEC"/>
+      </vertices>
+    </region>
+    <region excluded="false" guid="AB0BE8BA-A87D-40C4-86B2-5FF4512D81AD" name="Region1" offPage="true">
+      <expl></expl>
+      <placement column="0" row="0"/>
+      <size height="143" width="341"/>
+      <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+      <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+      <vertices>
+        <vertexBlock guid="1B8A6A7E-D694-4AD9-940F-03DC9067F16A"/>
+        <vertexBlock guid="A78CFBB0-2CF8-4990-B9B1-11C82C98DB11"/>
+        <vertexBlock guid="D715A8C8-1FF2-412B-97F3-86781F537D22"/>
+        <vertexBlock guid="2F67C8FC-09B7-4EC7-8B79-DE0E5825CB4C"/>
+        <vertexBlock guid="A58E6A24-4EFA-457D-A36F-8EFBF3259BB7"/>
+      </vertices>
+    </region>
   </regionBlocks>
 
   <vertexBlocks>
+    <pseudoStateVertex excluded="false" guid="1B8A6A7E-D694-4AD9-940F-03DC9067F16A" inward="false" kind="connectorState" name="SetupCon">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="238" left="148" right="307" top="185"/>
+      <properties value="32769"/>
+      <externalTransitions>
+        <externalTransition guid="136C41A1-BECE-4D3D-B4C7-62ED92E284D5" source="1B8A6A7E-D694-4AD9-940F-03DC9067F16A" target="A78CFBB0-2CF8-4990-B9B1-11C82C98DB11">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="37" left="280" right="492" top="-42"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="159" y="24"/>
+              <routePoint x="0" y="29"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="C8F568BE-2E76-4376-AF6E-5EC7F06AF122"/>
+          </conditionSide>
+        </externalTransition>
+      </externalTransitions>
+    </pseudoStateVertex>
+    <stateVertex excluded="false" guid="2F67C8FC-09B7-4EC7-8B79-DE0E5825CB4C" name="State2">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="939" left="572" right="852" top="839"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="74522B9E-7052-4A95-B07C-C18F51678EAD" source="2F67C8FC-09B7-4EC7-8B79-DE0E5825CB4C" target="D715A8C8-1FF2-412B-97F3-86781F537D22">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-74" left="235" right="447" top="-153"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="185" y="0"/>
+              <routePoint x="180" y="95"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="0000EE21-6456-45C4-BDF7-4021B90A8954"/>
+          </conditionSide>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
+    <stateVertex excluded="false" guid="3000A226-2595-4A59-A44C-92369530D0E6" name="Off">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="251" left="529" right="762" top="153"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="3659E636-81FE-4CD8-B428-429234CC5826" source="3000A226-2595-4A59-A44C-92369530D0E6" target="35F96CBB-85E5-4D16-AD6B-B3D452C8E1DC">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="307" left="-114" right="98" top="228"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="50" y="98"/>
+              <routePoint x="77" y="0"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="0000EE21-6456-45C4-BDF7-4021B90A8954"/>
+            <negativeSynchronizations>
+              <negativeState>81E04147-F4AE-4390-8F6F-C84C643BE6D5</negativeState>
+            </negativeSynchronizations>
+          </conditionSide>
+        </externalTransition>
+        <externalTransition guid="FC2ABB23-60D3-4BB2-93E1-53513311915D" source="3000A226-2595-4A59-A44C-92369530D0E6" target="615F9BCB-0DE4-4579-AE12-1CC999FDBAEC">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="185" left="291" right="503" top="106"/>
+            <properties value="809894018"/>
+            <routePoints>
+              <routePoint x="233" y="50"/>
+              <routePoint x="503" y="106"/>
+              <routePoint x="151" y="0"/>
+            </routePoints>
+          </transitionProperties>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
+    <pseudoStateVertex excluded="false" guid="350372D8-786F-43AC-8E35-7456BE35DF4B" kind="initialState" name="initial1">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="101" left="286" right="339" top="48"/>
+      <properties value="114689"/>
+      <externalTransitions>
+        <externalTransition guid="0B33BDE3-3A22-4896-A371-AF052F3E5738" source="350372D8-786F-43AC-8E35-7456BE35DF4B" target="3000A226-2595-4A59-A44C-92369530D0E6">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="48" left="116" right="328" top="-32"/>
+            <properties value="809894017"/>
+            <routePoints>
+              <routePoint x="45" y="5"/>
+              <routePoint x="243" y="3"/>
+              <routePoint x="56" y="0"/>
+            </routePoints>
+          </transitionProperties>
+        </externalTransition>
+      </externalTransitions>
+    </pseudoStateVertex>
+    <stateVertex excluded="false" guid="35F96CBB-85E5-4D16-AD6B-B3D452C8E1DC" name="ON">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="799" left="497" right="844" top="606"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="140827A4-A02C-4281-A33C-1B2B54AA794A" source="35F96CBB-85E5-4D16-AD6B-B3D452C8E1DC" target="3000A226-2595-4A59-A44C-92369530D0E6">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-138" left="238" right="450" top="-217"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="233" y="0"/>
+              <routePoint x="193" y="98"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="A601AD9E-7011-42B6-A275-52CC417E7833"/>
+          </conditionSide>
+        </externalTransition>
+      </externalTransitions>
+      <regions>
+        <regionBlock guid="AB0BE8BA-A87D-40C4-86B2-5FF4512D81AD"/>
+      </regions>
+    </stateVertex>
     <stateVertex excluded="false" guid="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508" name="select_LED">
       <expl></expl>
       <alias></alias>
@@ -74,7 +249,7 @@
           <expl></expl>
           <alias></alias>
           <transitionProperties>
-            <position bottom="-302" left="34" right="365" top="-362"/>
+            <position bottom="-302" left="34" right="365" top="-405"/>
             <properties value="809894018"/>
             <routePoints>
               <routePoint x="66" y="0"/>
@@ -88,12 +263,18 @@
           <actionSide>
             <actionCall actionFunction="RED_ON"/>
           </actionSide>
+          <tags>
+            <tag>
+              <name>visualSTATEAddedTag_Constraint</name>
+              <text>NewVariant2</text>
+            </tag>
+          </tags>
         </externalTransition>
         <externalTransition guid="816E6901-461F-4435-9B7A-FA2FA7788C2B" source="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508" target="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C">
           <expl></expl>
           <alias></alias>
           <transitionProperties>
-            <position bottom="74" left="280" right="492" top="-5"/>
+            <position bottom="74" left="243" right="492" top="-40"/>
             <properties value="809894016"/>
             <routePoints>
               <routePoint x="201" y="34"/>
@@ -106,13 +287,40 @@
           <actionSide>
             <actionCall actionFunction="BLUE_ON"/>
           </actionSide>
+          <tags>
+            <tag>
+              <name>visualSTATEAddedTag_Constraint</name>
+              <text>NewVariant1</text>
+            </tag>
+          </tags>
+        </externalTransition>
+        <externalTransition guid="D5C7429E-1FAC-4ABF-B14B-F2DED8150BDB" source="3F6B0E31-A2D3-43F2-8BE2-ED2633E70508" target="81E04147-F4AE-4390-8F6F-C84C643BE6D5">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-103" left="201" right="413" top="-183"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="87" y="0"/>
+              <routePoint x="0" y="106"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="346A968C-434E-4D42-9BB0-047E52BF4C69"/>
+          </conditionSide>
         </externalTransition>
       </externalTransitions>
     </stateVertex>
+    <pseudoStateVertex excluded="false" guid="615F9BCB-0DE4-4579-AE12-1CC999FDBAEC" inward="true" kind="connectorState" name="SetupCon">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="754" left="876" right="1117" top="701"/>
+      <properties value="32769"/>
+    </pseudoStateVertex>
     <stateVertex excluded="false" guid="81E04147-F4AE-4390-8F6F-C84C643BE6D5" name="RED_LED">
       <expl></expl>
       <alias></alias>
-      <position bottom="278" left="646" right="963" top="146"/>
+      <position bottom="278" left="818" right="1135" top="146"/>
       <stateProperties labelHeight="42" wrapText="true">
         <properties value="65537"/>
       </stateProperties>
@@ -160,10 +368,81 @@
         </externalTransition>
       </externalTransitions>
     </pseudoStateVertex>
+    <pseudoStateVertex excluded="false" guid="A58E6A24-4EFA-457D-A36F-8EFBF3259BB7" kind="initialState" name="initial1">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="542" left="294" right="347" top="489"/>
+      <properties value="114689"/>
+      <externalTransitions>
+        <externalTransition guid="1275F05D-C851-4BD0-8FAC-14E957EE12DF" source="A58E6A24-4EFA-457D-A36F-8EFBF3259BB7" target="D715A8C8-1FF2-412B-97F3-86781F537D22">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-34" left="90" right="302" top="-114"/>
+            <properties value="809894017"/>
+            <routePoints>
+              <routePoint x="45" y="5"/>
+              <routePoint x="198" y="-56"/>
+              <routePoint x="61" y="0"/>
+            </routePoints>
+          </transitionProperties>
+        </externalTransition>
+      </externalTransitions>
+    </pseudoStateVertex>
+    <stateVertex excluded="false" guid="A78CFBB0-2CF8-4990-B9B1-11C82C98DB11" name="SetUp">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="283" left="582" right="828" top="201"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="24D7DBCD-A789-47C3-A999-1BD3723CF13A" source="A78CFBB0-2CF8-4990-B9B1-11C82C98DB11" target="D715A8C8-1FF2-412B-97F3-86781F537D22">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="222" left="212" right="423" top="143"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="146" y="82"/>
+              <routePoint x="172" y="0"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="C8F568BE-2E76-4376-AF6E-5EC7F06AF122"/>
+          </conditionSide>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
+    <stateVertex excluded="false" guid="D715A8C8-1FF2-412B-97F3-86781F537D22" name="State1">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="609" left="582" right="826" top="513"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="35B4C888-54F2-41E9-86FE-50045E4C49D0" source="D715A8C8-1FF2-412B-97F3-86781F537D22" target="2F67C8FC-09B7-4EC7-8B79-DE0E5825CB4C">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="257" left="-69" right="143" top="177"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="50" y="95"/>
+              <routePoint x="61" y="0"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="0000EE21-6456-45C4-BDF7-4021B90A8954"/>
+          </conditionSide>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
     <stateVertex excluded="false" guid="DBFC9E39-C3AE-4628-9D36-3BFBEEBFE63C" name="BLUE_LED">
       <expl></expl>
       <alias></alias>
-      <position bottom="603" left="635" right="953" top="471"/>
+      <position bottom="603" left="807" right="1124" top="471"/>
       <stateProperties labelHeight="42" wrapText="true">
         <properties value="65537"/>
       </stateProperties>
@@ -190,7 +469,7 @@
           <expl></expl>
           <alias></alias>
           <transitionProperties>
-            <position bottom="352" left="-243" right="93" top="296"/>
+            <position bottom="352" left="-415" right="-79" top="296"/>
             <properties value="809894017"/>
             <routePoints>
               <routePoint x="74" y="132"/>

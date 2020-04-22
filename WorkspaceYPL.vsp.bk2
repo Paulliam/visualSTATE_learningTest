@@ -73,8 +73,29 @@
       <files>
         <file>TopLevelStateMachine1.vsr</file>
         <file>TopLevelStateMachine2.vsr</file>
+        <file>TopLevelStateMachine3.vsr</file>
+        <file>TopLevelStateMachine4.vsr</file>
       </files>
     </system>
   </systems>
+
+  <tags>
+    <tag>
+      <name>visualSTATEAddedTag_Variants</name>
+      <text>[
+   {
+      "expl" : "",
+      "features" : [],
+      "name" : "NewVariant1"
+   },
+   {
+      "expl" : "",
+      "features" : [],
+      "name" : "NewVariant2"
+   }
+]
+</text>
+    </tag>
+  </tags>
 
 </projectFile>
