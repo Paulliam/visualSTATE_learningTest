@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<NavigatorWorkspace Date="2020-04-20" Explanation="" Time="09:33:14">
+<NavigatorWorkspace Date="2020-05-09" Explanation="" Time="09:30:43">
 
   <SourceControl SccAuxPath="" SccName="" SccPath="." SccProvider=""/>
 
   <Project Active="true" ActiveCoder="HCoder" ActiveSystem="SystemYPL" ActiveVariant="" File="WorkspaceYPL.vsp">
-    <Signature CheckSum="" Version=""/>
+    <Signature CheckSum="530ebf83d602e055941637a4b7ff4aa8" Version="81"/>
     <Validator File="WorkspaceYPL.vws"/>
+    <Report Creator="1" File="coder\VSCoder.cre"/>
+    <Report Creator="3" File="verificator_report.vre"/>
+    <Report Creator="2" File="doc\WorkspaceYPL.rtf"/>
   </Project>
 
 </NavigatorWorkspace>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modelFile excluded="false" format="11" guid="ADA6BC3D-8D0F-45BC-853F-3A3F426337CA" name="TopLevelStateMachine7" xmlns="http://www.iar.com/visualSTATE/2011/Modelfile">
+
+  <expl></expl>
+
+  <alias></alias>
+
+  <position bottom="1606" left="48" right="712" top="1447"/>
+
+  <stateProperties labelHeight="42" wrapText="true">
+    <properties value="65537"/>
+  </stateProperties>
+
+  <elements>
+    <actionsFolder guid="D04AC150-E815-43B4-90F6-B5C098F43E3E" name="root"/>
+    <constantsFolder guid="4CE73016-01D6-4720-B324-1B67CFCE0B80" name="root">
+      <constant definition="true" guid="E8D2F6BE-D328-4BCD-AB53-AFD77A92E697" name="MAX" type="VS_INT">
+        <expl></expl>
+        <value>10</value>
+      </constant>
+      <constant definition="true" guid="EB36E3C5-23FD-4DB6-A139-4D50DCBCCEBE" name="MIN" type="VS_INT">
+        <expl></expl>
+        <value>1</value>
+      </constant>
+    </constantsFolder>
+    <eventsFolder guid="55EB97BB-A713-4F0A-94CC-5515E4CEDC88" name="root">
+      <event definition="true" guid="B186542C-E8A1-48F5-9B61-FB1CB0BA0794" name="E_DECREMENT">
+        <expl></expl>
+      </event>
+      <event definition="true" guid="4A230337-4547-428F-8B3D-9AAFF41FF9D6" name="E_INCREMENT">
+        <expl></expl>
+      </event>
+      <event definition="true" guid="A8D83C70-CFE6-4122-BCA2-254F712CA940" name="E_MODE">
+        <expl></expl>
+      </event>
+    </eventsFolder>
+    <eventGroupsFolder guid="4B60ADF2-DBE9-4A74-8633-58AB5AE8B8CA" name="root"/>
+    <externVariablesFolder guid="CB082698-6047-4A2B-BDF3-8ACB76449698" name="root"/>
+    <internVariablesFolder guid="CE89B934-1FAB-49DE-A9A6-BC2D5032CF73" name="root">
+      <internVariable definition="true" guid="09CA86EF-89DB-4F04-8363-8231BE580F96" name="nSet" type="VS_INT">
+        <expl></expl>
+        <value>1</value>
+      </internVariable>
+    </internVariablesFolder>
+    <signalsFolder guid="FE3FBE2A-674F-47B8-ACF6-F83E1A0D6404" name="root"/>
+  </elements>
+
+  <regions>
+    <regionBlock guid="D6BDB1F8-BEB6-4563-9499-10F2ED4067E9"/>
+  </regions>
+
+  <regionBlocks>
+    <region excluded="false" guid="D6BDB1F8-BEB6-4563-9499-10F2ED4067E9" name="Region1" offPage="true">
+      <expl>(内部反应 Internal reactionn)</expl>
+      <placement column="0" row="0"/>
+      <size height="116" width="664"/>
+      <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+      <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+      <vertices>
+        <vertexBlock guid="63473345-69DE-4EB2-9B56-5234CBB84DDD"/>
+        <vertexBlock guid="C3B73BFE-996F-445B-B533-3A5D0A7F22F4"/>
+        <vertexBlock guid="99099324-7652-4A32-A8E0-AE0D735056B0"/>
+      </vertices>
+    </region>
+    <region excluded="false" guid="E27A2456-0E52-4C6A-A62C-F63AD9FEEF59" name="Region1" offPage="false">
+      <expl></expl>
+      <placement column="0" row="0"/>
+      <size height="175" width="730"/>
+      <view colorNumber="7" pagesHorz="1" pagesVert="1"/>
+      <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+      <vertices/>
+    </region>
+  </regionBlocks>
+
+  <vertexBlocks>
+    <pseudoStateVertex excluded="false" guid="63473345-69DE-4EB2-9B56-5234CBB84DDD" kind="initialState" name="initial1">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="135" left="228" right="280" top="82"/>
+      <properties value="114689"/>
+      <externalTransitions>
+        <externalTransition guid="770EC5BC-AB77-4D08-98C6-7F5A4F380952" source="63473345-69DE-4EB2-9B56-5234CBB84DDD" target="C3B73BFE-996F-445B-B533-3A5D0A7F22F4">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="153" left="-45" right="167" top="74"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="45" y="45"/>
+              <routePoint x="148" y="0"/>
+            </routePoints>
+          </transitionProperties>
+        </externalTransition>
+      </externalTransitions>
+    </pseudoStateVertex>
+    <stateVertex excluded="false" guid="99099324-7652-4A32-A8E0-AE0D735056B0" name="Auto">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="984" left="77" right="812" top="630"/>
+      <stateProperties labelHeight="172" wrapText="true">
+        <properties value="65537"/>
+      </stateProperties>
+      <internalTransitions>
+        <internalTransition guid="AFE68416-E742-4722-8CB8-298810AFCC4F">
+          <expl></expl>
+          <alias></alias>
+          <conditionSide>
+            <trigger guid="4A230337-4547-428F-8B3D-9AAFF41FF9D6"/>
+            <guards>
+              <guard>nSet &lt; MAX</guard>
+            </guards>
+          </conditionSide>
+          <actionSide>
+            <assignment>nSet++</assignment>
+          </actionSide>
+        </internalTransition>
+        <internalTransition guid="53CCF0D1-A5EC-4346-B678-9F9558B94A61">
+          <expl></expl>
+          <alias></alias>
+          <conditionSide>
+            <trigger guid="B186542C-E8A1-48F5-9B61-FB1CB0BA0794"/>
+            <guards>
+              <guard>nSet &gt; MIN</guard>
+            </guards>
+          </conditionSide>
+          <actionSide>
+            <assignment>nSet--</assignment>
+          </actionSide>
+        </internalTransition>
+      </internalTransitions>
+      <externalTransitions>
+        <externalTransition guid="46929F62-5E5D-4C8F-A852-055631ECDCD8" source="99099324-7652-4A32-A8E0-AE0D735056B0" target="C3B73BFE-996F-445B-B533-3A5D0A7F22F4">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="-64" left="347" right="558" top="-143"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="331" y="0"/>
+              <routePoint x="278" y="116"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="A8D83C70-CFE6-4122-BCA2-254F712CA940"/>
+          </conditionSide>
+        </externalTransition>
+      </externalTransitions>
+      <regions>
+        <regionBlock guid="E27A2456-0E52-4C6A-A62C-F63AD9FEEF59"/>
+      </regions>
+    </stateVertex>
+    <stateVertex excluded="false" guid="C3B73BFE-996F-445B-B533-3A5D0A7F22F4" name="Manual">
+      <expl></expl>
+      <alias></alias>
+      <position bottom="397" left="130" right="463" top="280"/>
+      <stateProperties labelHeight="42" wrapText="true">
+        <properties value="1638401"/>
+      </stateProperties>
+      <externalTransitions>
+        <externalTransition guid="D35C4D31-7ACA-470A-8C2E-E9F6539A3C76" source="C3B73BFE-996F-445B-B533-3A5D0A7F22F4" target="99099324-7652-4A32-A8E0-AE0D735056B0">
+          <expl></expl>
+          <alias></alias>
+          <transitionProperties>
+            <position bottom="278" left="-71" right="140" top="198"/>
+            <properties value="809894016"/>
+            <routePoints>
+              <routePoint x="101" y="116"/>
+              <routePoint x="153" y="0"/>
+            </routePoints>
+          </transitionProperties>
+          <conditionSide>
+            <trigger guid="A8D83C70-CFE6-4122-BCA2-254F712CA940"/>
+          </conditionSide>
+        </externalTransition>
+      </externalTransitions>
+    </stateVertex>
+  </vertexBlocks>
+
+</modelFile>

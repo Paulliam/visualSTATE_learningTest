@@ -5,7 +5,7 @@
 
   <alias></alias>
 
-  <position bottom="325" left="201" right="794" top="130"/>
+  <position bottom="241" left="53" right="699" top="53"/>
 
   <stateProperties labelHeight="42" wrapText="true">
     <properties value="65537"/>
@@ -34,9 +34,6 @@
       <event definition="true" guid="C8F568BE-2E76-4376-AF6E-5EC7F06AF122" name="button3">
         <expl></expl>
       </event>
-      <event definition="true" guid="D44FACF6-F1B4-4631-919C-F14244077D95" name="button4">
-        <expl></expl>
-      </event>
     </eventsFolder>
     <eventGroupsFolder guid="C4620E1C-8701-4161-902C-4F8894B73774" name="root">
       <eventGroup definition="true" guid="346A968C-434E-4D42-9BB0-047E52BF4C69" name="EventGroup1">
@@ -47,7 +44,11 @@
     </eventGroupsFolder>
     <externVariablesFolder guid="04B540BF-C499-4F3A-9D5D-4A43B8FF6E71" name="root"/>
     <internVariablesFolder guid="9BD5D9F6-94F3-46C8-83F9-7F697F6DBA8A" name="root"/>
-    <signalsFolder guid="6F81515C-5D79-4D3A-8C7D-861B3BE9836A" name="root"/>
+    <signalsFolder guid="6F81515C-5D79-4D3A-8C7D-861B3BE9836A" name="root">
+      <signal definition="true" guid="74068C33-0724-4FB0-A0D2-F39FAFFC9616" name="Signal1">
+        <expl></expl>
+      </signal>
+    </signalsFolder>
   </elements>
 
   <regions>
@@ -59,7 +60,7 @@
     <region excluded="false" guid="3445C753-85AF-4C64-B10D-0E640DAE9593" name="Region1" offPage="true">
       <expl></expl>
       <placement column="0" row="0"/>
-      <size height="153" width="296"/>
+      <size height="146" width="296"/>
       <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
       <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
       <vertices>
@@ -72,7 +73,7 @@
     <region excluded="false" guid="7FAD53B8-0A38-4CEB-8062-82B825BC78C9" name="Region2" offPage="true">
       <expl></expl>
       <placement column="1" row="0"/>
-      <size height="146" width="291"/>
+      <size height="146" width="349"/>
       <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
       <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
       <vertices>
@@ -341,6 +342,7 @@
           </conditionSide>
           <actionSide>
             <actionCall actionFunction="BLUE_ON"/>
+            <signal>Signal1</signal>
           </actionSide>
         </externalTransition>
       </externalTransitions>
@@ -478,7 +480,7 @@
             </routePoints>
           </transitionProperties>
           <conditionSide>
-            <trigger guid="C8F568BE-2E76-4376-AF6E-5EC7F06AF122"/>
+            <trigger guid="74068C33-0724-4FB0-A0D2-F39FAFFC9616"/>
           </conditionSide>
           <actionSide>
             <actionCall actionFunction="LED_OFF"/>

@@ -5,7 +5,7 @@
 
   <alias></alias>
 
-  <position bottom="624" left="198" right="833" top="445"/>
+  <position bottom="474" left="64" right="699" top="294"/>
 
   <stateProperties labelHeight="42" wrapText="true">
     <properties value="65537"/>
@@ -98,6 +98,9 @@
           <conditionSide>
             <trigger guid="53209050-9F1C-43A2-85A7-9BA7A289105C"/>
           </conditionSide>
+          <actionSide>
+            <actionCall actionFunction="Light"/>
+          </actionSide>
         </externalTransition>
         <externalTransition guid="4FB7299D-9CBB-4711-9D18-FEF24FF648D4" source="48AA69AD-DD0E-4246-91EE-FC525632BF14" target="6E0978F0-B3AD-4EE3-9601-2E669A6B9A5C">
           <expl></expl>
